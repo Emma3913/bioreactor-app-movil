@@ -80,11 +80,11 @@ const styles = StyleSheet.create({
   },
 
   title:{
-    fontSize:35,
-    fontWeight:"bold",
+    fontSize:60,
+    fontWeight:"900",
     marginBottom:20,
     textAlign:"center",
-    color:"#1e5812"
+    color:"#09552f"
   },
 
   input:{

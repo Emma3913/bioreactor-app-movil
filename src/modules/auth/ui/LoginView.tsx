@@ -29,6 +29,10 @@ export default function LoginView() {
     }
   };
 
+  const handleSignUp = () => {
+    router.push("/signup");
+  };
+
   return (
     <ImageBackground
       source={require("../../../../assets/images/riego.png")}
@@ -61,6 +65,10 @@ export default function LoginView() {
           />
           <TouchableOpacity style={styles.button} onPress={handleLogin}>
             <Text style={styles.buttonText}>Login</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.button} onPress={handleSignUp}>
+            <Text style={styles.buttonText}>Sign Up</Text>
           </TouchableOpacity>
         </View>
       </ImageBackground>

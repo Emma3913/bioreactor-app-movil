@@ -14,12 +14,12 @@ import {
 export default function LoginView() {
   const router = useRouter();
 
-  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
     try {
-      const data = await login(email, password);
+      const data = await login(username, password);
       Alert.alert("Usuario autenticado correctamente");
       console.log(data);
       router.push("/bioreactors");
@@ -51,8 +51,8 @@ export default function LoginView() {
           <TextInput
             placeholder="User"
             style={styles.input}
-            value={email}
-            onChangeText={setEmail}
+            value={username}
+            onChangeText={setUsername}
             autoCapitalize="none"
           />
 
